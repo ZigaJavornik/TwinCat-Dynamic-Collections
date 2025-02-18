@@ -359,6 +359,32 @@
     <PlaceholderReference Include="Tc2_System">
       <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_System</Namespace>
+      <Parameters>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>TABLE_UPPER_BOUND</Key>
+          <Value>15</Value>
+        </Parameter>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>STRING_LENGTH_EXP</Key>
+          <Value>255</Value>
+        </Parameter>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>STRING_LENGTH_ADDRESS</Key>
+          <Value>20</Value>
+        </Parameter>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>STRING_LENGTH_COMMENT</Key>
+          <Value>255</Value>
+        </Parameter>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>STRING_LENGTH_OUTSTRING</Key>
+          <Value>255</Value>
+        </Parameter>
+        <Parameter ListName="PARAM" xmlns="">
+          <Key>TABLE_SHOW_VALID_ITEMS</Key>
+          <Value>FALSE</Value>
+        </Parameter>
+      </Parameters>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -366,8 +392,34 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <LibraryReference Include="Tc2_Utilities,3.3.38.0,Beckhoff Automation GmbH">
+    <LibraryReference Include="Tc2_Utilities,newest,Beckhoff Automation GmbH">
       <Namespace>Tc2_Utilities</Namespace>
+      <Parameters>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>NMAXLICENSES</Key>
+          <Value>50</Value>
+        </Parameter>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>NMAXLICENSEDEVICES</Key>
+          <Value>16</Value>
+        </Parameter>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>NMAXCPUCOUNT</Key>
+          <Value>64</Value>
+        </Parameter>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>CMAXCHARACTERS</Key>
+          <Value>16#FFFFFFF0</Value>
+        </Parameter>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>NMAXFILESONDONGLE</Key>
+          <Value>20</Value>
+        </Parameter>
+        <Parameter ListName="PARAMETERLIST" xmlns="">
+          <Key>CMAXCSVFIELDVALUESIZE</Key>
+          <Value>255</Value>
+        </Parameter>
+      </Parameters>
     </LibraryReference>
   </ItemGroup>
   <ItemGroup>
